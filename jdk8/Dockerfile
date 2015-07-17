@@ -1,8 +1,5 @@
 FROM codenvy/shellinabox
 
-RUN apt-get remove apt-listchanges && \
-    apt-get install curl 
-
 RUN wget \
     --no-cookies \
     --no-check-certificate \
