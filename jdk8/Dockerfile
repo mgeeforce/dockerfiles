@@ -1,7 +1,7 @@
 FROM codenvy/shellinabox
 
-RUN apt-get remove apt-listchanges 
-RUN apt-get install curl 
+RUN apt-get remove apt-listchanges && \
+    apt-get install curl 
 
 RUN wget \
     --no-cookies \
